@@ -24,6 +24,7 @@
 
   <body>
     <nav>
+      <div class="notice"><%= notice %></div>
       <%= link_to "Home", root_path %>
       <%= link_to "Login", new_session_path unless authenticated? %>
       <%= button_to "Logout", session_path, method: :delete if authenticated? %>
